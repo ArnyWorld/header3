@@ -154,5 +154,86 @@
 
 
 
+@media (max-width:992px){   
+    
+    .navigationFlex{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navigationFlex .logo,.navigationFlex .navigation, .navigationFlex .redes {
+        width: 100%;
+    }
+
+    .navigationFlex .logo{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+    
+    /*Movil*/
+    .hamburguer{
+        display: flex;
+        align-self: flex-end;
+        margin-top: -55px;
+        margin-bottom: 15px;
+    }
+    .hamburguer i{
+        color: var(--colorWhite);
+        font-size: 30px;
+    }
+
+    .navigationFlex .navigation{
+        margin-bottom: 15px;
+        display: none;
+    }
+    .navigationFlex .redes{
+        display: none;    
+    }
+
+    #hamburguer:checked ~ .navigation, #hamburguer:checked ~ .redes{
+        display: flex;
+    }
+
+
+    .textContent h1{
+        font-size: 45px;
+    }
+
+    .textContent p{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        width: 90%;
+    }
+
+    .navigation{
+        flex-direction: column;
+    }
+    .list-navigation{
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .textContent{
+        margin-bottom: 50px;
+    }
+
+    .textContent h1{
+        font-size: 35px;
+    }
+
+    .textContent p{
+        font-size: 22px;
+    }
+
+    .navigationFlex .redes a i{
+        font-size: 15px;
+        
+    }
+}
 
 
