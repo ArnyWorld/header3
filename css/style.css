@@ -1,0 +1,158 @@
+:root{
+    --fontPrimary:'Poppins', sans-serif;;
+    --fontSecondary:'Open Sans', sans-serif;;
+    --colorWhite:#fff;
+    --colorBlack:#000;
+    --backgroundTransparent:rgba(0,0,0,.7);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar_navigation{
+    width: 100%;
+    background-color: var(--backgroundTransparent);
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+}
+
+.navigationFlex{
+    display: flex;
+}
+
+.navigationFlex .logo{
+    flex-grow: 1;
+}
+.navigationFlex .logo img{
+    width: 200px;
+}
+
+/*movil*/
+.hamburguer{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.hamburguer i{
+    color: var(--colorWhite);
+    font-size: 30px;
+}
+
+#hamburguer{
+    display: none;
+}
+
+.navigationFlex .navigation{
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+ .navigation .list-navigation a{
+    color: var(--colorWhite);
+    font-family: var(--fontPrimary);
+    transition: all .5s ease-in;
+}
+
+.navigation .list-navigation a:hover{
+    font-weight: bold;
+}
+
+.navigationFlex .redes{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigationFlex .redes a{
+    color: var(--colorWhite);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navigationFlex .redes a i{
+    font-size: 20px;
+}
+
+.navigationFlex .redes a::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    transform: scale(0);
+    position: absolute;
+    transition: all .5s ease;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.navigationFlex .redes a:hover i{
+    color: var(--colorBlack);
+    z-index: 100;
+}
+
+.navigationFlex .redes a:hover::before{
+    transform: scale(1);
+}
+
+.textContent{
+    margin-bottom: 150px;
+}
+
+.textContent h1{
+    color: var(--colorWhite);
+    font-size: 65px;
+    font-family: var(--fontPrimary);
+    text-transform: uppercase;
+}
+
+.textContent p{
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-family: var(--fontSecondary);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.textContent button{
+    padding: 10px 45px;
+    background-color: transparent;
+    border: 1px solid var(--colorWhite);
+    border-radius: 5px;
+    color: var(--colorWhite);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
